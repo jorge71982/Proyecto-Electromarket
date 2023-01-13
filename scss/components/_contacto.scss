@@ -1,0 +1,93 @@
+main {
+  .container-form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 90px;
+    margin-top: 100px;
+    .contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      h4 {
+        margin-bottom: 15px;
+        font-size: 35px;
+      }
+      h2 {
+        margin-bottom: 5px;
+        font-size: 25px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      .nombre-email-telefono {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .nombre {
+          input {
+            width: 400px;
+            padding: 10px 10px;
+            font-size: 15px;
+            border: 1px solid #3590d7;
+            margin-bottom: 20px;
+            border-radius: 3px;
+          }
+        }
+        .email {
+          input {
+            width: 400px;
+            padding: 10px 10px;
+            font-size: 15px;
+            border: 1px solid #3590d7;
+            margin-bottom: 20px;
+            border-radius: 3px;
+          }
+        }
+        .telefono {
+          input {
+            width: 400px;
+            padding: 10px 10px;
+            font-size: 15px;
+            border: 1px solid #3590d7;
+            margin-bottom: 20px;
+            border-radius: 3px;
+          }
+        }
+      }
+      .mensaje {
+        textarea {
+          width: 400px;
+          border: 1px solid #3590d7;
+          margin-bottom: 20px;
+          border-radius: 3px;
+        }
+      }
+      div {
+        .boton-contacto {
+          border: none;
+          width: 150px;
+          height: 50px;
+          color: white;
+          font-size: 15px;
+          background: #1a2537;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: all 1s;
+          &:hover {
+            background: #3590d7;
+          }
+        }
+      }
+    }
+  }
+}

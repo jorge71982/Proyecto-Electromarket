@@ -1,0 +1,73 @@
+footer {
+  background-color: $color-principal;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 250px;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  .contacto-logo-social {
+    div {
+      h4 {
+        text-align: center;
+        font-size: 15px;
+      }
+      .email {
+        .ingresa-email {
+          width: 178px;
+        }
+      }
+    }
+    div {
+      .logo {
+        margin-bottom: 5px;
+        @extend %logo;
+      }
+    }
+    .social {
+      display: flex;
+      justify-content: space-around;
+    }
+    a {
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .atencion-al-cliente {
+    width: 170px;
+    height: 150px;
+    h3 {
+      color: white;
+      font-size: 17px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 13px;
+      text-align: justify;
+    }
+  }
+  .venta-telefonica {
+    width: 170px;
+    height: 150px;
+    h3 {
+      font-size: 17px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 13px;
+      text-align: justify;
+    }
+  }
+  .ubicacion {
+    h3 {
+      font-size: 17px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 230px;
+      height: 150px;
+    }
+  }
+}

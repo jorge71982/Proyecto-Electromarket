@@ -1,0 +1,91 @@
+.main-nosotros {
+  margin-top: 200px;
+  section {
+    div {
+      div {
+        h1 {
+          text-align: center;
+        }
+      }
+      .main-imagen-parrafo {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+        align-items: center;
+        gap: 20px;
+        img {
+          width: 500px;
+          height: 400px;
+        }
+        p {
+          text-align: justify;
+          font-weight: 200;
+        }
+      }
+    }
+    .whatsapp {
+      width: 230px;
+      a {
+        text-decoration: none;
+        color: $color-principal;
+        position: relative;
+        left: 35px;
+        bottom: 10px;
+        h4 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .ofrecemos {
+    background-color: $color-principal;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    padding: 40px;
+    h2 {
+    }
+  }
+  .mision-vision-valores {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    div {
+      .mision {
+        @extend %flex;
+        flex-direction: column;
+        img {
+          @extend %img-mvv;
+        }
+        p {
+          @extend %p-mvv;
+        }
+      }
+    }
+    div {
+      .vision {
+        @extend %flex;
+        flex-direction: column;
+        img {
+          @extend %img-mvv;
+        }
+        p {
+          @extend %p-mvv;
+        }
+      }
+    }
+    div {
+      .valores {
+        @extend %flex;
+        flex-direction: column;
+        img {
+          @extend %img-mvv;
+        }
+        p {
+          @extend %p-mvv;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+$color-principal: #3590d7;
+
+%logo {
+  width: 232px;
+  height: 70px;
+}
+
+%flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%img-mvv {
+  width: 100px;
+  height: 100px;
+}
+
+%p-mvv {
+  font-size: 13px;
+  text-align: center;
+  width: 300px;
+}
