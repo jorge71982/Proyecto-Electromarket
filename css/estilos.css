@@ -12,7 +12,7 @@ header .barra-navegacion .navbar .container-fluid .navbar-brand img, footer .con
   width: 232px;
   height: 70px; }
 
-main .buscador, main .video, .main-nosotros .mision-vision-valores div .mision, .main-nosotros .mision-vision-valores div .vision, .main-nosotros .mision-vision-valores div .valores {
+.buscador, .video, .main-nosotros .mision-vision-valores div .mision, .main-nosotros .mision-vision-valores div .vision, .main-nosotros .mision-vision-valores div .valores {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -51,39 +51,74 @@ main .hero {
     width: 100%;
     height: 80vh;
     filter: brightness(0.7); }
-  main .hero div .carousel-inner .carousel-caption .titulo {
+  main .hero div .carousel-inner .carousel-item .carousel-caption .titulo {
+    -webkit-animation-name: zoomInDown;
+    animation-name: zoomInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+@-webkit-keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+
+@keyframes zoomInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, -1000px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, 60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1); } }
+  main .hero div .carousel-caption .titulo {
     font-size: 50px;
     font-weight: 500;
     color: white; }
 
-main .buscador {
+.buscador {
   padding: 10px; }
-  main .buscador .navbar .container-fluid .d-flex .form-control {
+  .buscador .navbar .container-fluid .d-flex .form-control {
     width: 900px; }
-  main .buscador .navbar .container-fluid .d-flex .btn {
+  .buscador .navbar .container-fluid .d-flex .btn {
     color: #3590d7;
     border-color: #3590d7;
     transition: all 1s; }
-    main .buscador .navbar .container-fluid .d-flex .btn:hover {
+    .buscador .navbar .container-fluid .d-flex .btn:hover {
       background-color: #3590d7;
       color: white; }
 
-main .productos .productos-titulo {
+.productos .productos-titulo {
   background-color: #3590d7;
   color: white;
   text-align: center;
   font-size: 25px;
   padding: 20px; }
-  main .productos .productos-titulo h2 {
+  .productos .productos-titulo h2 {
     text-align: center; }
 
-main .productos .tarjetas-productos {
+.productos .tarjetas-productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 250px 250px 250px;
   justify-items: center;
   margin-top: 60px; }
-  main .productos .tarjetas-productos div {
+  .productos .tarjetas-productos div {
     border: 1px solid #317f31;
     border-radius: 20px;
     width: 260px;
@@ -91,14 +126,14 @@ main .productos .tarjetas-productos {
     text-align: center;
     background-color: aliceblue;
     box-shadow: 3px 3px 3px 1px rgba(130, 203, 213, 0.278); }
-    main .productos .tarjetas-productos div a img {
+    .productos .tarjetas-productos div a img {
       width: 240px;
       height: 150px;
       border-radius: 100px; }
-    main .productos .tarjetas-productos div h4 {
+    .productos .tarjetas-productos div h4 {
       font-size: 14px; }
 
-main .video {
+.video {
   padding: 0px 30px 30px 30px; }
 
 .main-nosotros {
