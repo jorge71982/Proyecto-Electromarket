@@ -12,7 +12,7 @@ header .barra-navegacion .navbar .container-fluid .navbar-brand img, footer .con
   width: 232px;
   height: 70px; }
 
-.buscador, .video, .main-nosotros .mision-vision-valores div .mision, .main-nosotros .mision-vision-valores div .vision, .main-nosotros .mision-vision-valores div .valores {
+.buscador, .video, .main-nosotros .mision-vision-valores div .mision, .main-nosotros .mision-vision-valores div .vision, .main-nosotros .mision-vision-valores div .valores, footer .contacto-logo-social div .email {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -200,7 +200,8 @@ main .hero {
     color: white; }
   .main-servicios section .titulo div p {
     color: white;
-    font-size: 30px; }
+    font-size: 30px;
+    padding: 0 20px; }
   .main-servicios section .tarjetas-servicios {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -356,16 +357,35 @@ footer {
   align-items: center;
   justify-items: center;
   color: white; }
-  footer .contacto-logo-social div h4 {
-    text-align: center;
-    font-size: 15px; }
-  footer .contacto-logo-social div .email .ingresa-email {
-    width: 178px; }
+  footer .contacto-logo-social div {
+    margin-bottom: 10px; }
+    footer .contacto-logo-social div h4 {
+      text-align: center;
+      font-size: 15px; }
+    footer .contacto-logo-social div .email {
+      gap: 5px; }
+      footer .contacto-logo-social div .email .ingresa-email {
+        width: 170px;
+        height: 25px;
+        border-radius: 5px;
+        border: solid 1px;
+        border-color: #3590d7; }
+      footer .contacto-logo-social div .email .enviar {
+        height: 25px;
+        font-size: 15px;
+        border-color: white;
+        border-radius: 5px;
+        transition: all 0.5s; }
+        footer .contacto-logo-social div .email .enviar:hover {
+          background-color: white;
+          color: #3590d7; }
   footer .contacto-logo-social div .logo {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    border-radius: 5px; }
   footer .contacto-logo-social .social {
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin-top: 10px; }
   footer .contacto-logo-social a img {
     width: 30px;
     height: 30px; }
@@ -390,10 +410,12 @@ footer {
       text-align: justify; }
   footer .ubicacion h3 {
     font-size: 17px;
-    font-weight: bold; }
+    font-weight: bold;
+    text-align: center; }
   footer .ubicacion iframe {
     width: 230px;
-    height: 150px; }
+    height: 150px;
+    border-radius: 5px; }
 
 @media screen and (max-width: 1100px) {
   .main-nosotros section div .main-imagen-parrafo {
